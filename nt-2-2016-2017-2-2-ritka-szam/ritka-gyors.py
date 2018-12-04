@@ -8,7 +8,7 @@ def ritka(n):
         tmp = f0
         f0 = f1
         f1 += tmp
-        p <<= 1 # binaris jobbra tolás 1-gyal, azaz szorzás 2-vel
+        p <<= 1 # binaris jobbra tolás 1-gyel, azaz szorzás 2-vel
     return p + ritka(n-f0)
 
 print(ritka(int(input())))
